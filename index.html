@@ -7,47 +7,102 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel=”stylesheet” href=”css/bootstrap.css”>
+    <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
     <link rel="stylesheet" href="Develop/style.css" />
-
         <title>Weather Dashboard</title>
   </head> 
 
   <body>
-    <header class="container-fluid text-center text-black bg-light p-2"> 
-        <h1 class="p-3 mb-2 bg-success text-white">WEATHER</h1>
+    <header class="container-fluid text-center text-white bg-dark mt-10 p-3 mb-">
+              <h1>WEATHER</h1>
     </header>
 
     <!-- container for page content -->
 <div id="content" class="container-fluid"></div>
     
         <!-- Left content with city search -->
-        <div id="content-left" class="col-md-2">
+        <div id="content-left" class="col-sm-2 md-12 lg-15">
             <form>
-       <!-- <div class="form-row">  -->
+       
         <label id="search-city"></label> Search for a City: </label>
         
         <!-- magnifying glass for search -->
-        <button class="material-icons">&#xe8b6;</i></button>
-            <input id="search-city" class="form-control" name="city" value="Salt Lake City"></input>
+        <button class="material-icons">&#xe8b6;</i> </button>
+        <input id="search-city" class="form-control" name="city" value="Salt Lake City"></input>
+           
     </form>
         </div>
     </div>
 
     <div id="search-error"></div>
     <!-- list of prior searched cities -->
-    <ul id="city-results" class="list-group mt-4"></ul>
+    <ul id="city-results" class="list-group mt-5"></ul>
     <!-- clear storage button -->
     <a id="clear-storage" href="#"></a>    
 </div>
 
 <!-- right side -->
-    <div id="content-right" class="col-md-5 pt-4">
+    <div id="content-right" class="col-sm-12 md-9 pt-3">
         <!-- current weather on top -->
         <div id="current-weather" class="border-rounded">swag</div>
         <!-- 5 day forecast below current weather -->
-        <div id="weather-forecast" class="mt-5"></div> 
+        <div id="five-day-weather" class="mt-5"></div> 
         
     </div>
+
+    <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">day 1</h5>
+            <p class="card-text">Stuff</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Day 2</h5>
+            <p class="card-text">stuff</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Day 3</h5>
+            <p class="card-text">stuff.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Day 4</h5>
+            <p class="card-text">weather</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Day 5</h5>
+            <p class="card-text">stuff</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     
 
