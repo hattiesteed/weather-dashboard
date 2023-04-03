@@ -4,15 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="Develop/style.css" />
+
+        <title>Weather Dashboard</title>
   </head> 
+
   <body>
-    <header> </header>
+    <header class="container-fluid text-center text-black bg-light p-2"> 
+        <h1 class="p-3 mb-2 bg-success text-white">WEATHER</h1>
+    </header>
 
+    <!-- container for page content -->
+<div id="content" class="container-fluid"></div>
+    
+        <!-- Left content with city search -->
+        <div id="content-left" class="col-md-2">
+            <form>
+       <!-- <div class="form-row">  -->
+        <label id="search-city"></label> Search for a City: </label>
+        
+        <!-- magnifying glass for search -->
+        <button class="material-icons">&#xe8b6;</i></button>
+            <input id="search-city" class="form-control" name="city" value="Salt Lake City"></input>
+    </form>
+        </div>
+    </div>
 
+    <div id="search-error"></div>
+    <!-- list of prior searched cities -->
+    <ul id="city-results" class="list-group mt-4"></ul>
+    <!-- clear storage button -->
+    <a id="clear-storage" href="#"></a>    
+</div>
 
+<!-- right side -->
+    <div id="content-right" class="col-md-5 pt-4">
+        <!-- current weather on top -->
+        <div id="current-weather" class="border-rounded">swag</div>
+        <!-- 5 day forecast below current weather -->
+        <div id="weather-forecast" class="mt-5"></div> 
+        
+    </div>
 
+    
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="Develop/script.js"> </script>
   </body>
 </html>

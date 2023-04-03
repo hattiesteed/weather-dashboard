@@ -1,0 +1,11 @@
+#header h1{
+    font-size: 400%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#search-city {
+    width: 80%
+}
+
