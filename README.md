@@ -7,5 +7,5 @@
 
 # Link to Deployed Application
 * link
+https://hattiesteed.github.io/weather-dashboard/ 
 
-# Screenshot Preview of Project
