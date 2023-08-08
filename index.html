@@ -1,113 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel=”stylesheet” href=”css/bootstrap.css”>
-    <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
-    <link rel="stylesheet" href="Develop/style.css" />
-        <title>Weather Dashboard</title>
-  </head> 
+    <link rel="stylesheet" href="assets/style.css">
+    </link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Weather Forecast</title>
+</head>
 
-  <body>
-    <header class="container-fluid text-center text-white bg-dark mt-10 p-3 mb-">
-              <h1>WEATHER</h1>
+<body>
+    <header id="header">
+        <h1>Weather Forecast</h1>
     </header>
-
-    <!-- container for page content -->
-<div id="content" class="container-fluid"></div>
-    
-        <!-- Left content with city search -->
-        <div id="content-left" class="col-sm-2 md-12 lg-15">
-            <form>
-       
-        <label id="search-city"></label> Search for a City: </label>
-        
-        <!-- magnifying glass for search -->
-        <button class="material-icons">&#xe8b6;</i> </button>
-        <input id="search-city" class="form-control" name="city" value="Salt Lake City"></input>
-           
-    </form>
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <aside class="col-sm-12 col-md-6 col-lg-3 p-3 border bg-light">
+                <h2 class="mt-1">Search</h2>
+                <div class="form-inline form group">
+                    <input type="text" class="form-control" id="search-city" placeholder="Search City">
+                    <button type="submit" id="search-btn" class="btn btn-primary">Search</button>
+                </div>
+                <ul class="search-history" id="searchHistory"></ul>
+            </aside>
+            <div class="container col-sm-12 col-md-6 col-lg-8" id="display-current">
+                <div id="current-weather" class="row col-12 container mt-3">
+                    <h2>Current Weather</h2>
+                </div>
+                <div id="Fiveday-forecast" class="container col-12 row">
+                    <h2>5 Day Forecast</h2>
+            </div>
         </div>
     </div>
-
-    <div id="search-error"></div>
-    <!-- list of prior searched cities -->
-    <ul id="city-results" class="list-group mt-5"></ul>
-    <!-- clear storage button -->
-    <a id="clear-storage" href="#"></a>    
-</div>
-
-<!-- right side -->
-    <div id="content-right" class="col-sm-12 md-9 pt-3">
-        <!-- current weather on top -->
-        <div id="current-weather" class="border-rounded">swag</div>
-        <!-- 5 day forecast below current weather -->
-        <div id="five-day-weather" class="mt-5"></div> 
-        
-    </div>
-
-    <div class="col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">day 1</h5>
-            <p class="card-text">Stuff</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Day 2</h5>
-            <p class="card-text">stuff</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Day 3</h5>
-            <p class="card-text">stuff.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Day 4</h5>
-            <p class="card-text">weather</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Day 5</h5>
-            <p class="card-text">stuff</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="Develop/script.js"> </script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
 </html>
