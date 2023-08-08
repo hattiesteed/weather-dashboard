@@ -1,0 +1,15 @@
+#header {
+    background: lemonchiffon;
+    padding: 15px;
+    text-align: center; 
+}
+
+#container {
+    height: 115vh;
+}
+
+#searchHistory {
+    background: lemonchiffon;
+    padding: 10px;
+    text-align: center;
+}
